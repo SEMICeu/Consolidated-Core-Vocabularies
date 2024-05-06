@@ -1,0 +1,3716 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+ 
+
+
+
+<head>
+    
+	
+    <meta charset="utf-8" />
+    <title>Core Vocabularies m8g namespace glossary</title>
+    <script src="https://www.w3.org/Tools/respec/respec-w3c" class="remove" defer></script>
+    <script class="remove">
+    // All config options at https://respec.org/docs/
+
+	var myeditors = [
+	
+	
+	
+	
+	    
+	    
+		
+		   {
+		    name: "Florian Barthelemy",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Jitse De Cock",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Emiel Dhondt",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Pavlina Fragkou",
+		      
+		      
+		    company: "European Commission",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Arthur Schiltz",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Anastasia Sofou",
+		      
+		      
+		    company: "Trasys International",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Emidio Stani",
+		      
+		      
+		    company: "PwC EU Services",
+		      
+		      
+		    }
+		, 
+		
+		   {
+		    name: "Bert Van Nuffelen",
+		      
+		      
+		      
+		    }
+		
+		
+             
+        
+	
+		]
+
+	var myauthors = [
+	
+	
+	    
+	    
+		
+		   {
+		    name: "Core Vocabularies Working Group ",
+		      
+		      
+		      
+		    }
+		
+		
+             
+        
+	
+	
+	
+		]
+
+
+   
+
+    var respecConfig = {
+      edDraftURI: "https://semiceu.github.io/Consolidated-Core-Vocabularies/releases/2.2.0/",
+      latestVersion: "https://semiceu.github.io/Consolidated-Core-Vocabularies/releases/2.2.0/",
+      specStatus: "LD",
+      publishDate: "2024-05-06",
+      editors: myeditors,
+      authors: myauthors,
+      github: "SEMICeu/CoreVocs",
+      shortName: "Core Vocabularies",
+      xref: "web-platform",
+      doJsonLd: true,
+      logos: [{
+        src: "https://semiceu.github.io/CPOV/releases/2.1.0/html/semic-icon.png",
+        url: "https://semic.eu",
+        alt: "SEMIC",
+        width: 154,
+        height: 140,
+        id: "semic-logo",
+      },],
+      generatedSubtitle: "",
+      additionalCopyrightHolders: "",
+      localBiblio: {
+        "DXWG": {
+          "href" : "https://www.w3.org/2017/dxwg/wiki/Main_Page",
+          "title" : "Dataset Exchange Working Group",
+          "publisher" : "W3C"
+          },
+        "ISA":{
+           "href":"https://ec.europa.eu/isa/",
+           "title":"Interoperability Solutions for European Public Administrations (ISA)",
+           "publisher":"European Commission"
+          },
+        "ISA2":{
+          "href":"https://ec.europa.eu/isa2/",
+          "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²)",
+          "publisher":"European Commission"
+        },
+        "SEMIC":{
+          "href":"https://joinup.ec.europa.eu/",
+          "title":"JoinUp welcomes Interoperable Europe",
+          "publisher":"European Commission"
+         },
+        "DEU" : {
+          "href":"https://data.europa.eu",
+          "title":"The official portal for European data",
+          "publisher":"European Commission"
+        },
+		"HVD" : {
+		  "href":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0138",
+		  "title":"Implementing Regulation for High Value Datasets",
+		  "publisher":"European Union"
+		},
+		"DCAT-AP-HVD" : {
+		  "href":"https://semiceu.github.io/uri.semic.eu-generated/DCAT-AP/releases/2.2.0-hvd/",
+		  "title":"Usage Guidelines of DCAT-AP for High-Value Datasets",
+		  "publisher":"European Commission"
+		},
+		"DCAT-AP" : {
+		  "href":"https://semiceu.github.io/DCAT-AP/releases/3.0.0/",
+		  "title":"DCAT-AP, a DCAT profile for European data portals",
+		  "publisher":"European Commission"
+		},
+                "PSI" : {
+                  "href": "https://eur-lex.europa.eu/eli/dir/2019/1024/oj",
+                  "title" :  "Directive on open data and the re-use of public sector information (recast)",
+                  "publisher" : "European Union"
+                }
+      }
+    };
+
+
+
+    </script>
+    <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+      max-width: 100%;
+      margin: auto;
+      height: auto;
+      }
+    </style>
+     
+    <p class="copyright">
+        Copyright © 2024
+    </p>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="msapplication-TileColor" content="#7ED956" />
+</head>
+<body>
+    
+
+    <!-- Start page content -->
+
+
+
+<section id="abstract">
+    <h2>Abstract</h2>
+This vocabularium supports the Core Vocabularies. This vocabularium is hosted under the <code>http://data.europa.eu/m8g/</code> namespace. 
+It is maintained by the SEMIC action, Interoperable Europe.
+</section>
+
+
+<section id="specintro">
+    <h2>
+        Introduction
+    </h2>
+    
+
+This vocabularium supports <a href="https://joinup.ec.europa.eu/collection/semic-support-centre/solution/e-government-core-vocabularies">the SEMIC Core Vocabularies</a>. 
+The terms defined in this namespace are defined as broad as possible for wider reuse but are scoped to the needs of the SEMIC Core Vocabularies. 
+All terms in this vocabularium are terms used in the SEMIC Core Vocabularies and defined under the <code>http://data.europa.eu/m8g/</code> namespace.
+This release of the vocabularium corresponds to the follwing releases of the SEMIC Core Vocabularies.
+
+<ul>
+    <li> <a href="https://semiceu.github.io/CCCEV/releases/2.1.0/">CCCEV v2.1.0</a></li>
+    <li> <a href="https://semiceu.github.io/CPOV/releases/2.1.1/">Core Public Organisation Vocabulary v2.1.1</a></li>
+    <li> <a href="https://semiceu.github.io/Core-Business-Vocabulary/releases/2.2.0/">Core Business Vocabulary v2.2.0</a></li>
+    <li> <a href="https://semiceu.github.io/Core-Person-Vocabulary/releases/2.1.1/">Core Person Vocabulary v2.1.1</a></li>
+    <li> <a href="https://semiceu.github.io/Core-Location-Vocabulary/releases/2.1.0/">Core Location Vocabulary v2.1.0</a></li>
+    <li> <a href="https://semiceu.github.io/Core-Public-Event-Vocabulary/releases/1.1.0/">Core Public Event Vocabulary v1.1.0</a></li>
+    <li> <a href="https://semiceu.github.io/CPSV-AP/releases/3.2.0/">CPSV-AP v3.2.0</a></li>
+
+</ul>
+
+</section>
+
+
+
+
+<section id="specstatus">
+    <h2>Status</h2>
+        <p>
+            This vocabulary has the status Onbekend</a> published at 2024-05-06.
+        </p>
+        <p>
+            Information about the process and the decisions involved in the creation of this vocabularium are consultable on the respective Core Vocabulary pages.
+            <ul>
+                <li> <a href="https://github.com/SEMICeu/CCCEV">CCCEV</a></li>
+                <li> <a href="https://github.com/SEMICeu/CPOV">Core Public Organisation Vocabulary</a></li>
+                <li> <a href="https://github.com/SEMICeu/Core-Business-Vocabulary">Core Business Vocabulary</a></li>
+                <li> <a href="https://github.com/SEMICeu/Core-Person-Vocabulary">Core Person Vocabulary</a></li>
+                <li> <a href="https://github.com/SEMICeu/Core-Location-Vocabulary">Core Location Vocabulary</a></li>
+                <li> <a href="https://github.com/SEMICeu/Core-Public-Event-Vocabulary">Core Public Event Vocabulary</a></li>
+                <li> <a href="https://github.com/SEMICeu/CPSV-AP">CPSV-AP</a></li>
+            </ul>
+        </p>
+</section>
+
+
+
+
+<section id="speclicence">
+    <h2>
+        License
+    </h2>
+    
+        <p>
+	<!--
+            <span rel="dct:type"
+                  property="dct:title"
+                  href="http://purl.org/dc/dcmitype/Text"
+                  xmlns:dct="http://purl.org/dc/terms/">
+		  This specification </span> of <a rel="cc:attributionURL" property="cc:attributionName" href="ORGANISATION" xmlns:cc="http://creativecommons.org/ns#">ORGANISATION </a> 
+	          is published under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">"CC0"</a>.
+	-->
+             Copyright © 2024 European Union. All material in this repository is published under the license CC-BY 4.0, unless explicitly otherwise mentioned.
+        </p>
+    
+</section>
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+<section>
+<h1>Vocabulary Overview</h1>
+
+    <div id="overview">
+                
+                        <p>
+                            This specification describes the following classes:
+                            <br />
+                            | 
+			      <a href="#AccountingDocument">Accounting Document</a> | 
+			      <a href="#AdministrativeUnit">Administrative Unit</a> | 
+			      <a href="#BusinessEvent">Business Event</a> | 
+			      <a href="#Channel">Channel</a> | 
+			      <a href="#ContactPoint">Contact Point</a> | 
+			      <a href="#Cost">Cost</a> | 
+			      <a href="#Event">Event</a> | 
+			      <a href="#GenericDate">Generic date</a> | 
+			      <a href="#ImageObject">Image Object</a> | 
+			      <a href="#LifeEvent">Life Event</a> | 
+			      <a href="#Output">Output</a> | 
+			      <a href="#Participation">Participation</a> | 
+			      <a href="#PublicEvent">Public Event</a> | 
+			      <a href="#PublicOrganisation">Public Organisation</a> | 
+			      <a href="#ReferenceFramework">Reference Framework</a> | 
+			      <a href="#ServiceConcessionContract">Service Concession Contract</a> |
+                        </p>
+                        <p> and the following properties:
+                            <br />
+                            | 
+			      <a href="#accessibility">accessibility</a> |
+			      <a href="#audience">audience</a> |
+			      <a href="#code">code</a> |
+			      <a href="#contactPage">contact page</a> |
+			      <a href="#currency">currency</a> |
+			      <a href="#dateOfBirth">date of birth</a> |
+			      <a href="#dateOfDeath">date of death</a> |
+			      <a href="#eventNumber">event number</a> |
+			      <a href="#eventStatus">event status</a> |
+			      <a href="#expectedNumberOfParticipants">expected number of participants</a> |
+			      <a href="#format">format</a> |
+			      <a href="#gender">gender</a> |
+			      <a href="#hasEmail">has email</a> |
+			      <a href="#hasTelephone">has telephone</a> |
+			      <a href="#hasValue">has value</a> |
+			      <a href="#latitude">latitude</a> |
+			      <a href="#level">level</a> |
+			      <a href="#longitude">longitude</a> |
+			      <a href="#matronymicName">matronymic name</a> |
+			      <a href="#processingTime">processing time</a> |
+			      <a href="#registrationDate">registration date</a> |
+			      <a href="#registrationPage">registration page</a> |
+			      <a href="#role">role</a> |
+			      <a href="#sex">sex</a> |
+                        </p>
+                
+                
+    </div>
+    <div>
+    <p>The diagram below displays the consolidated Core Vocabularies diagram.</p>
+    
+        <a href="html/overview.jpg"
+           target="_blank">
+            <img src="html/overview.jpg"/>
+        </a>
+    </div>
+<h2>
+   Classes
+</h2>
+This section lists the classes matching the base namespace of this vocabularium.
+
+
+   
+
+    <h3 id="AccountingDocument" >Accounting Document</h3>
+    <table class="def" id="AccountingDocument">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20AccountingDocument&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/AccountingDocument"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/AccountingDocument"
+					   data-placement="right">Accounting Document</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="AccountingDocument.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/AccountingDocument
+				</td>
+			</tr>
+                        <tr id="AccountingDocument.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Accounting Document
+				</td>
+			</tr>
+                        <tr id="AccountingDocument.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Financial and non-financial information as a result of an activity of an organisation.
+				</td>
+			</tr>
+			
+                        <tr id="AccountingDocument.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Accounting documents, might include:
+<ul>
+<li> Financial statements (incl. the list of participating interests, subsidiary undertakings and associated undertakings, their registered office address and proportion of capital held), audit reports.</li> 
+<li> Non-financial statements, management reports and other statements or reports.</li>
+<li> Annual financial reports.</li>
+</ul>
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="AdministrativeUnit" >Administrative Unit</h3>
+    <table class="def" id="AdministrativeUnit">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20AdministrativeUnit&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/AdminUnit"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/AdminUnit"
+					   data-placement="right">Administrative Unit</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="AdministrativeUnit.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/AdminUnit
+				</td>
+			</tr>
+                        <tr id="AdministrativeUnit.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Administrative Unit
+				</td>
+			</tr>
+                        <tr id="AdministrativeUnit.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A detailed administrative unit organized in a hierarchy.
+				</td>
+			</tr>
+			
+                        <tr id="AdministrativeUnit.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				This class should be used whenever a classification mechanism is in place, in alternative to the properties adminUnitL1 and adminUnitL2 of the Address class which allow free text.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="BusinessEvent" >Business Event</h3>
+    <table class="def" id="BusinessEvent">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20BusinessEvent&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/BusinessEvent"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/BusinessEvent"
+					   data-placement="right">Business Event</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="BusinessEvent.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/BusinessEvent
+				</td>
+			</tr>
+                        <tr id="BusinessEvent.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Business Event
+				</td>
+			</tr>
+                        <tr id="BusinessEvent.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A Business Event is a specific situation or event in the lifecycle of a business that fulfils one or more needs or (legal) obligations of that business at this specific point in time.
+				</td>
+			</tr>
+			
+                        <tr id="BusinessEvent.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				A Business Event requires a set of public services to be delivered and consumed in order for the associated business need(s) or obligation(s) to be fulfilled. Business Events are defined within the context of a particular Member State. In other words, a Business Event groups together a number of public services that need to be delivered for completing that particular event.
+				</td>
+			</tr>
+			
+			
+                        <tr id="BusinessEvent.subclass">
+                                <td></td>
+                                <td>
+				   subclass of 
+				</td>
+				<td> <a href=""></a>
+                                
+				</td>
+			</tr>
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="Channel" >Channel</h3>
+    <table class="def" id="Channel">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20Channel&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/Channel"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/Channel"
+					   data-placement="right">Channel</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Channel.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/Channel
+				</td>
+			</tr>
+                        <tr id="Channel.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Channel
+				</td>
+			</tr>
+                        <tr id="Channel.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A medium through which an Agent provides, uses or interacts in another way with a Public Service.
+				</td>
+			</tr>
+			
+                        <tr id="Channel.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Typical examples include online services, phone, walk-in centres etc.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="ContactPoint" >Contact Point</h3>
+    <table class="def" id="ContactPoint">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20ContactPoint&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/ContactPoint"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/ContactPoint"
+					   data-placement="right">Contact Point</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="ContactPoint.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/ContactPoint
+				</td>
+			</tr>
+                        <tr id="ContactPoint.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Contact Point
+				</td>
+			</tr>
+                        <tr id="ContactPoint.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Information (e.g. e-mail address, telephone number) of a person or department through which the user can get in touch with.
+				</td>
+			</tr>
+			
+                        <tr id="ContactPoint.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The Core Public Organization Vocabulary defines properties for telephone number, e-mail address and opening hours although it is noteworthy that the class is based on schema.org's <a href="http://schema.org/ContactPoint"> ContactPoint </a> class  that has additional properties that some implementations may find useful.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="Cost" >Cost</h3>
+    <table class="def" id="Cost">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20Cost&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/Cost"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/Cost"
+					   data-placement="right">Cost</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Cost.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/Cost
+				</td>
+			</tr>
+                        <tr id="Cost.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Cost
+				</td>
+			</tr>
+                        <tr id="Cost.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The Cost class represents any costs related to the execution of a Public Service that the Agent consuming it needs to pay.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="Event" >Event</h3>
+    <table class="def" id="Event">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20Event&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/Event"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/Event"
+					   data-placement="right">Event</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Event.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/Event
+				</td>
+			</tr>
+                        <tr id="Event.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Event
+				</td>
+			</tr>
+                        <tr id="Event.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				This class represents an event that can be of any type that triggers, makes use of, or in some way is related to, a Public Service.
+				</td>
+			</tr>
+			
+                        <tr id="Event.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				It is not expected to be used directly, rather, one or other of its subclasses should be used. The properties of the class are, of course, inherited by those subclasses. The Event class is used as a hook either to a single related Public Service, such as diagnosis of illness being related to application for sickness benefit; or to a group of Public Services, such as all those related to the establishment of a new business.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="GenericDate" >Generic date</h3>
+    <table class="def" id="GenericDate">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20GenericDate&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/GenericDate"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/GenericDate"
+					   data-placement="right">Generic date</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Genericdate.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/GenericDate
+				</td>
+			</tr>
+                        <tr id="Genericdate.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Generic date
+				</td>
+			</tr>
+                        <tr id="Genericdate.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The date data type is the union of  xs:date, xs:gYearMonth and xs:gYear
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="ImageObject" >Image Object</h3>
+    <table class="def" id="ImageObject">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20ImageObject&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/ImageObject"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/ImageObject"
+					   data-placement="right">Image Object</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="ImageObject.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/ImageObject
+				</td>
+			</tr>
+                        <tr id="ImageObject.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Image Object
+				</td>
+			</tr>
+                        <tr id="ImageObject.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A logo to describe / represent an entity.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="LifeEvent" >Life Event</h3>
+    <table class="def" id="LifeEvent">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20LifeEvent&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/LifeEvent"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/LifeEvent"
+					   data-placement="right">Life Event</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="LifeEvent.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/LifeEvent
+				</td>
+			</tr>
+                        <tr id="LifeEvent.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Life Event
+				</td>
+			</tr>
+                        <tr id="LifeEvent.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The Life Event class represents an important event or situation in a citizen&#39;s life where public services are required.
+				</td>
+			</tr>
+			
+                        <tr id="LifeEvent.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Note on the scope: an individual will encounter any number of 'events'; in the general sense of the word. In the context of the CPSV-AP, the Life Event class only represents an event to which a Public Service is related. For example, a couple becoming engaged is not a CPSV-AP Life Event, getting married is, since only the latter has any relevance to public services.
+				</td>
+			</tr>
+			
+			
+                        <tr id="LifeEvent.subclass">
+                                <td></td>
+                                <td>
+				   subclass of 
+				</td>
+				<td> <a href=""></a>
+                                
+				</td>
+			</tr>
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="Output" >Output</h3>
+    <table class="def" id="Output">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20Output&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/Output"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/Output"
+					   data-placement="right">Output</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Output.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/Output
+				</td>
+			</tr>
+                        <tr id="Output.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Output
+				</td>
+			</tr>
+                        <tr id="Output.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An output can be any resource - document, artefact - anything produced by the Public Service. In the context of a Public Service, the output provides an official document or other artefact of the Competent Authority (Public Organization) that permits/authorises/entitles an Agent to (do) something.
+				</td>
+			</tr>
+			
+                        <tr id="Output.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				In some cases, the Output of one Public Service will be used as evidence to fulfil a requirement of another Public Service. Such relationships should be described in the associated Rule(s).
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="Participation" >Participation</h3>
+    <table class="def" id="Participation">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20Participation&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/Participation"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/Participation"
+					   data-placement="right">Participation</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="Participation.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/Participation
+				</td>
+			</tr>
+                        <tr id="Participation.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Participation
+				</td>
+			</tr>
+                        <tr id="Participation.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The Participation class allows to define roles within a certain context.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="PublicEvent" >Public Event</h3>
+    <table class="def" id="PublicEvent">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20PublicEvent&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/PublicEvent"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/PublicEvent"
+					   data-placement="right">Public Event</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="PublicEvent.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/PublicEvent
+				</td>
+			</tr>
+                        <tr id="PublicEvent.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Public Event
+				</td>
+			</tr>
+                        <tr id="PublicEvent.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Something that happens at a particular place and time,
+organised by one or more agents for a particular purpose, and is of interest to a general
+ audience. This definition excludes natural events such as earthquakes and volcanic 
+eruptions.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="PublicOrganisation" >Public Organisation</h3>
+    <table class="def" id="PublicOrganisation">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20PublicOrganisation&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/PublicOrganisation"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/PublicOrganisation"
+					   data-placement="right">Public Organisation</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="PublicOrganisation.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/PublicOrganisation
+				</td>
+			</tr>
+                        <tr id="PublicOrganisation.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Public Organisation
+				</td>
+			</tr>
+                        <tr id="PublicOrganisation.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An Organization that is defined as being part of the public sector by a legal framework at any level.
+				</td>
+			</tr>
+			
+                        <tr id="PublicOrganisation.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Organizations which exist to provide services for its citizens and companies are called Public Organizations. The Public Organization class represents the organization. One organization may comprise several sub-organizations and any organization may have one or more organizational units. Each of these is described using the same properties and relationships.
+<br/><br/>
+This definition is consistent with the more detailed definition of a "public sector body" as given in the <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX%3A32019L1024&qid=1706001352901">PSI Directive</a>: "the State, regional or local authorities, bodies governed by public law and associations formed by one or several such authorities or one or several such bodies governed by public law". It further defines a body governed by public law as any body "(a) established for the specific purpose of meeting needs in the general interest, not having an industrial or commercial character; and (b) having legal personality; and (c) financed, for the most part by the State, or regional or local authorities, or other bodies governed by public law; or subject to management supervision by those bodies; or having an administrative, managerial or supervisory board, more than half of whose members are appointed by the State, regional or local authorities or by other bodies governed by public law".
+				</td>
+			</tr>
+			
+			
+                        <tr id="PublicOrganisation.subclass">
+                                <td></td>
+                                <td>
+				   subclass of 
+				</td>
+				<td> <a href=""></a>
+                                
+				</td>
+			</tr>
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="ReferenceFramework" >Reference Framework</h3>
+    <table class="def" id="ReferenceFramework">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20ReferenceFramework&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/ReferenceFramework"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/ReferenceFramework"
+					   data-placement="right">Reference Framework</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="ReferenceFramework.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/ReferenceFramework
+				</td>
+			</tr>
+                        <tr id="ReferenceFramework.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Reference Framework
+				</td>
+			</tr>
+                        <tr id="ReferenceFramework.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Legislation or official policy from which Requirements are derived.
+				</td>
+			</tr>
+			
+                        <tr id="ReferenceFramework.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Usual Reference Frameworks are legal and non-legal specifications. Examples include procedures, tendering legislation, etc.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="ServiceConcessionContract" >Service Concession Contract</h3>
+    <table class="def" id="ServiceConcessionContract">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20ServiceConcessionContract&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Class
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/ServiceConcessionContract"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/ServiceConcessionContract"
+					   data-placement="right">Service Concession Contract</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="ServiceConcessionContract.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/ServiceConcessionContract
+				</td>
+			</tr>
+                        <tr id="ServiceConcessionContract.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				Service Concession Contract
+				</td>
+			</tr>
+                        <tr id="ServiceConcessionContract.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Concessions are contracts for pecuniary interest by means of which one or more contracting authorities or contracting entities entrusts the execution of works, or the provision and the management of services, to one or more economic operators.
+				</td>
+			</tr>
+			
+                        <tr id="ServiceConcessionContract.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The object of such contracts is the procurement of works or services by means of a concession, the consideration of which consists in the right to exploit the works or services or in that right together with payment. Such contracts may, but do not necessarily, involve a transfer of ownership to contracting authorities or contracting entities, but contracting authorities or contracting entities always obtain the benefits of the works or services in
+question. The definition comes from the Directive <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32014L0023&from=EN">2014/23/EU</a>.
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+
+<h2>
+   Properties
+</h2>
+This section lists the properties matching the base namespace of this vocabularium.
+
+
+
+   
+
+    <h3 id="accessibility">accessibility</h3>
+    <table class="def" id="table-term-accessibility">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20accessibility&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/accessibility"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/accessibility"
+					   data-placement="right">accessibility</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="accessibility.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/accessibility
+				</td>
+			</tr>
+                        <tr id="accessibility.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				accessibility
+				</td>
+			</tr>
+                        <tr id="accessibility.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Information about how the Public Event can be approached, reached or entered, in particular for people with special needs.
+				</td>
+			</tr>
+			
+                        <tr id="accessibility.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				This property may be provided in multiple languages with multiple instances of the accessibility property.
+				</td>
+			</tr>
+			
+			
+                        <tr id="accessibility.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/PublicEvent"><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="accessibility.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"><div class="shorten">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="audience">audience</h3>
+    <table class="def" id="table-term-audience">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20audience&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/audience"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/audience"
+					   data-placement="right">audience</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="audience.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/audience
+				</td>
+			</tr>
+                        <tr id="audience.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				audience
+				</td>
+			</tr>
+                        <tr id="audience.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The target group of people for whom the Public Event is created.
+				</td>
+			</tr>
+			
+			
+                        <tr id="audience.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/PublicEvent"><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="audience.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="code">code</h3>
+    <table class="def" id="table-term-code">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20code&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/code"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/code"
+					   data-placement="right">code</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="code.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/code
+				</td>
+			</tr>
+                        <tr id="code.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				code
+				</td>
+			</tr>
+                        <tr id="code.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The classification of the administrative unit.
+				</td>
+			</tr>
+			
+			
+                        <tr id="code.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/AdminUnit"><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="code.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="contactPage">contact page</h3>
+    <table class="def" id="table-term-contactPage">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20contactPage&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/contactPage"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/contactPage"
+					   data-placement="right">contact page</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="contactpage.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/contactPage
+				</td>
+			</tr>
+                        <tr id="contactpage.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				contact page
+				</td>
+			</tr>
+                        <tr id="contactpage.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A web page that could be used to reach out the Contact Point.
+				</td>
+			</tr>
+			
+			
+                        <tr id="contactpage.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/ContactPoint"><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="contactpage.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://xmlns.com/foaf/0.1/Document"><div class="shorten">http://xmlns.com/foaf/0.1/Document</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="currency">currency</h3>
+    <table class="def" id="table-term-currency">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20currency&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/currency"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/currency"
+					   data-placement="right">currency</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="currency.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/currency
+				</td>
+			</tr>
+                        <tr id="currency.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				currency
+				</td>
+			</tr>
+                        <tr id="currency.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The currency in which the Cost needs to be paid and the value of the Cost is expressed.
+				</td>
+			</tr>
+			
+                        <tr id="currency.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The possible values for this property are described in the controlled vocabulary 
+<a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency">Currency</a> Authority Table of Publications Office.
+				</td>
+			</tr>
+			
+			
+                        <tr id="currency.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/Cost"><div class="shorten">http://data.europa.eu/m8g/Cost</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="currency.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="dateOfBirth">date of birth</h3>
+    <table class="def" id="table-term-dateOfBirth">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20dateOfBirth&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/birthDate"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/birthDate"
+					   data-placement="right">date of birth</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="dateofbirth.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/birthDate
+				</td>
+			</tr>
+                        <tr id="dateofbirth.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				date of birth
+				</td>
+			</tr>
+                        <tr id="dateofbirth.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The point in time on which the Person was born.
+				</td>
+			</tr>
+			
+                        <tr id="dateofbirth.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The date of birth could be expressed as date, gYearMonth or gYear, example:
+<ul>
+<li>- 1980-09-16^^xs:date</li>
+<li>- 1980-09^^xs:gYearMonth</li>
+<li>- 1980^^xs:gYear</li>
+</ul>
+				</td>
+			</tr>
+			
+			
+                        <tr id="dateofbirth.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/person#Person"><div class="shorten">http://www.w3.org/ns/person#Person</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="dateofbirth.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/GenericDate"><div class="shorten">http://data.europa.eu/m8g/GenericDate</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="dateOfDeath">date of death</h3>
+    <table class="def" id="table-term-dateOfDeath">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20dateOfDeath&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/deathDate"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/deathDate"
+					   data-placement="right">date of death</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="dateofdeath.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/deathDate
+				</td>
+			</tr>
+                        <tr id="dateofdeath.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				date of death
+				</td>
+			</tr>
+                        <tr id="dateofdeath.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The point in time on which the Person died.
+				</td>
+			</tr>
+			
+                        <tr id="dateofdeath.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The date of birth could be expressed as date, gYearMonth or gYear, example:
+<ul>
+<li>- 1980-09-16^^xs:date</li>
+<li>- 1980-09^^xs:gYearMonth</li>
+<li>- 1980^^xs:gYear</li>
+</ul>
+				</td>
+			</tr>
+			
+			
+                        <tr id="dateofdeath.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/person#Person"><div class="shorten">http://www.w3.org/ns/person#Person</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="dateofdeath.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/GenericDate"><div class="shorten">http://data.europa.eu/m8g/GenericDate</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="eventNumber">event number</h3>
+    <table class="def" id="table-term-eventNumber">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20eventNumber&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/eventNumber"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/eventNumber"
+					   data-placement="right">event number</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="eventnumber.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/eventNumber
+				</td>
+			</tr>
+                        <tr id="eventnumber.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				event number
+				</td>
+			</tr>
+                        <tr id="eventnumber.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The sequence position of the Public Event.
+				</td>
+			</tr>
+			
+                        <tr id="eventnumber.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Examples could be the ''4th" or "2022".
+				</td>
+			</tr>
+			
+			
+                        <tr id="eventnumber.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/PublicEvent"><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="eventnumber.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"><div class="shorten">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="eventStatus">event status</h3>
+    <table class="def" id="table-term-eventStatus">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20eventStatus&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/eventStatus"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/eventStatus"
+					   data-placement="right">event status</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="eventstatus.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/eventStatus
+				</td>
+			</tr>
+                        <tr id="eventstatus.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				event status
+				</td>
+			</tr>
+                        <tr id="eventstatus.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				 This property defines the overall status of the event.
+				</td>
+			</tr>
+			
+                        <tr id="eventstatus.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The recomended code list is the <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/event-status">  Event Status Controlled vocabulary </a> maintained by the Publications Office of the EU.
+				</td>
+			</tr>
+			
+			
+                        <tr id="eventstatus.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/PublicEvent"><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="eventstatus.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="expectedNumberOfParticipants">expected number of participants</h3>
+    <table class="def" id="table-term-expectedNumberOfParticipants">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20expectedNumberOfParticipants&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/expectedNumberOfParticipants"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/expectedNumberOfParticipants"
+					   data-placement="right">expected number of participants</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="expectednumberofparticipants.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/expectedNumberOfParticipants
+				</td>
+			</tr>
+                        <tr id="expectednumberofparticipants.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				expected number of participants
+				</td>
+			</tr>
+                        <tr id="expectednumberofparticipants.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The number of participants expected to participate in the event.
+				</td>
+			</tr>
+			
+			
+                        <tr id="expectednumberofparticipants.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/PublicEvent"><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="expectednumberofparticipants.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2001/XMLSchema#integer"><div class="shorten">http://www.w3.org/2001/XMLSchema#integer</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="format">format</h3>
+    <table class="def" id="table-term-format">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20format&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/format"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/format"
+					   data-placement="right">format</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="format.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/format
+				</td>
+			</tr>
+                        <tr id="format.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				format
+				</td>
+			</tr>
+                        <tr id="format.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A plan of organisation or arrangement of the Public Event.
+				</td>
+			</tr>
+			
+                        <tr id="format.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				Examples include conference call, physical meeting or hybrid.
+				</td>
+			</tr>
+			
+			
+                        <tr id="format.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/PublicEvent"><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="format.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="gender">gender</h3>
+    <table class="def" id="table-term-gender">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20gender&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/gender"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/gender"
+					   data-placement="right">gender</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="gender.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/gender
+				</td>
+			</tr>
+                        <tr id="gender.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				gender
+				</td>
+			</tr>
+                        <tr id="gender.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The identities, expressions and societal roles of the Person.
+				</td>
+			</tr>
+			
+                        <tr id="gender.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The gender of an individual should be recorded using a controlled vocabulary that is appropriate for the specific context. In some cases, the chromosomal or physical state of an individual will be more important than the gender that they express, in others the reverse will be true. What is always important is that the controlled vocabulary used to describe an individual's gender is stated explicitly.
+				</td>
+			</tr>
+			
+			
+                        <tr id="gender.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/person#Person"><div class="shorten">http://www.w3.org/ns/person#Person</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="gender.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="hasEmail">has email</h3>
+    <table class="def" id="table-term-hasEmail">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20hasEmail&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/email"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/email"
+					   data-placement="right">has email</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="hasemail.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/email
+				</td>
+			</tr>
+                        <tr id="hasemail.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				has email
+				</td>
+			</tr>
+                        <tr id="hasemail.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				An electronic address through which the Contact Point can be contacted.
+				</td>
+			</tr>
+			
+			
+                        <tr id="hasemail.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/ContactPoint"><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="hasemail.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Literal"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Literal</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="hasTelephone">has telephone</h3>
+    <table class="def" id="table-term-hasTelephone">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20hasTelephone&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/telephone"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/telephone"
+					   data-placement="right">has telephone</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="hastelephone.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/telephone
+				</td>
+			</tr>
+                        <tr id="hastelephone.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				has telephone
+				</td>
+			</tr>
+                        <tr id="hastelephone.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A telephone number through which the Contact Point can be contacted.
+				</td>
+			</tr>
+			
+			
+                        <tr id="hastelephone.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/ContactPoint"><div class="shorten">http://data.europa.eu/m8g/ContactPoint</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="hastelephone.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2000/01/rdf-schema#Literal"><div class="shorten">http://www.w3.org/2000/01/rdf-schema#Literal</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="hasValue">has value</h3>
+    <table class="def" id="table-term-hasValue">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20hasValue&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/hasValue"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/hasValue"
+					   data-placement="right">has value</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="hasvalue.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/hasValue
+				</td>
+			</tr>
+                        <tr id="hasvalue.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				has value
+				</td>
+			</tr>
+                        <tr id="hasvalue.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A numeric value indicating the amount of the Cost.
+				</td>
+			</tr>
+			
+			
+                        <tr id="hasvalue.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/Cost"><div class="shorten">http://data.europa.eu/m8g/Cost</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="hasvalue.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2001/XMLSchema#double"><div class="shorten">http://www.w3.org/2001/XMLSchema#double</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="latitude">latitude</h3>
+    <table class="def" id="table-term-latitude">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20latitude&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/latitude"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/latitude"
+					   data-placement="right">latitude</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="latitude.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/latitude
+				</td>
+			</tr>
+                        <tr id="latitude.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				latitude
+				</td>
+			</tr>
+                        <tr id="latitude.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The geographic coordinate that specifies the north / south position of the Geomerty on the Earth&#39;s surface.
+				</td>
+			</tr>
+			
+			
+                        <tr id="latitude.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/locn#Geometry"><div class="shorten">http://www.w3.org/ns/locn#Geometry</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="latitude.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2001/XMLSchema#string"><div class="shorten">http://www.w3.org/2001/XMLSchema#string</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="level">level</h3>
+    <table class="def" id="table-term-level">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20level&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/level"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/level"
+					   data-placement="right">level</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="level.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/level
+				</td>
+			</tr>
+                        <tr id="level.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				level
+				</td>
+			</tr>
+                        <tr id="level.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The level of the administrative unit in the hierarchy.
+				</td>
+			</tr>
+			
+                        <tr id="level.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The recommended code list to indicate the level of an Admin Unit is the <a href=https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/atu-type>Administrative territorial unit type</a> Controlled Vocabulary maintained by the Publications Office of the EU. 
+				</td>
+			</tr>
+			
+			
+                        <tr id="level.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/AdminUnit"><div class="shorten">http://data.europa.eu/m8g/AdminUnit</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="level.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="longitude">longitude</h3>
+    <table class="def" id="table-term-longitude">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20longitude&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/longitude"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/longitude"
+					   data-placement="right">longitude</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="longitude.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/longitude
+				</td>
+			</tr>
+                        <tr id="longitude.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				longitude
+				</td>
+			</tr>
+                        <tr id="longitude.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The geographic coordinate that specifies the east / west position of the Geometry on the Earth&#39;s surface.
+				</td>
+			</tr>
+			
+			
+                        <tr id="longitude.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/locn#Geometry"><div class="shorten">http://www.w3.org/ns/locn#Geometry</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="longitude.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2001/XMLSchema#string"><div class="shorten">http://www.w3.org/2001/XMLSchema#string</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="matronymicName">matronymic name</h3>
+    <table class="def" id="table-term-matronymicName">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20matronymicName&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/matronymicName"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/matronymicName"
+					   data-placement="right">matronymic name</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="matronymicname.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/matronymicName
+				</td>
+			</tr>
+                        <tr id="matronymicname.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				matronymic name
+				</td>
+			</tr>
+                        <tr id="matronymicname.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				Name based on the given name of the Person&#39;s mother.
+				</td>
+			</tr>
+			
+			
+                        <tr id="matronymicname.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/person#Person"><div class="shorten">http://www.w3.org/ns/person#Person</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="matronymicname.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"><div class="shorten">http://www.w3.org/1999/02/22-rdf-syntax-ns#langString</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="processingTime">processing time</h3>
+    <table class="def" id="table-term-processingTime">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20processingTime&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/processingTime"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/processingTime"
+					   data-placement="right">processing time</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="processingtime.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/processingTime
+				</td>
+			</tr>
+                        <tr id="processingtime.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				processing time
+				</td>
+			</tr>
+                        <tr id="processingtime.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The (estimated) time needed for executing a Public Service which may depend on the Channel chosen.
+				</td>
+			</tr>
+			
+                        <tr id="processingtime.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The actual information is provided using the <a href="https://www.iso.org/standard/70907.html">ISO8601</a> syntax for durations. 
+				</td>
+			</tr>
+			
+			
+                        <tr id="processingtime.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/Channel"><div class="shorten">http://data.europa.eu/m8g/Channel</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="processingtime.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2001/XMLSchema#duration"><div class="shorten">http://www.w3.org/2001/XMLSchema#duration</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="registrationDate">registration date</h3>
+    <table class="def" id="table-term-registrationDate">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20registrationDate&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/registrationDate"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/registrationDate"
+					   data-placement="right">registration date</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="registrationdate.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/registrationDate
+				</td>
+			</tr>
+                        <tr id="registrationdate.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				registration date
+				</td>
+			</tr>
+                        <tr id="registrationdate.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The date on which the legal entity has registered in some jurisdiction for regulatory and / or for tax purposes.
+				</td>
+			</tr>
+			
+			
+                        <tr id="registrationdate.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/legal#LegalEntity"><div class="shorten">http://www.w3.org/ns/legal#LegalEntity</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="registrationdate.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2001/XMLSchema#date"><div class="shorten">http://www.w3.org/2001/XMLSchema#date</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="registrationPage">registration page</h3>
+    <table class="def" id="table-term-registrationPage">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20registrationPage&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/registrationPage"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/registrationPage"
+					   data-placement="right">registration page</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="registrationpage.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/registrationPage
+				</td>
+			</tr>
+                        <tr id="registrationpage.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				registration page
+				</td>
+			</tr>
+                        <tr id="registrationpage.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				A web page that provides means to attend the Public Event.
+				</td>
+			</tr>
+			
+			
+                        <tr id="registrationpage.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/PublicEvent"><div class="shorten">http://data.europa.eu/m8g/PublicEvent</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="registrationpage.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://xmlns.com/foaf/0.1/Document"><div class="shorten">http://xmlns.com/foaf/0.1/Document</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="role">role</h3>
+    <table class="def" id="table-term-role">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20role&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/role"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/role"
+					   data-placement="right">role</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="role.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/role
+				</td>
+			</tr>
+                        <tr id="role.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				role
+				</td>
+			</tr>
+                        <tr id="role.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The function of an Agent within a Participation.
+				</td>
+			</tr>
+			
+			
+                        <tr id="role.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://data.europa.eu/m8g/Participation"><div class="shorten">http://data.europa.eu/m8g/Participation</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="role.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+   
+
+    <h3 id="sex">sex</h3>
+    <table class="def" id="table-term-sex">
+                    <thead>
+                        <tr >
+                            <th class="" style="width:5%">
+					<a href="https://github.com/SEMICeu/Consolidated-Core-Vocabularies/issues/new?title=Issue%20for%20sex&body=Explain%20your%20issue"}}>
+					   <img src="html/callout.png" loading="lazy" alt="(create issue)" width="20" height="20"/>
+					</a>
+                            </th>
+                            <th class="" style="width:20%">
+                                Property
+                            </th>
+                            <th class="" style="width:75%">
+				<a href="http://data.europa.eu/m8g/sex"
+					   data-toggle="tooltip"
+					   data-content="http://data.europa.eu/m8g/sex"
+					   data-placement="right">sex</a>
+                            </th> 
+                        </tr>
+                    </thead>
+		    <tbody> 
+                        <tr id="sex.uri">
+                                <td></td>
+                                <td>
+				   URI
+				</td>
+				<td>
+				http://data.europa.eu/m8g/sex
+				</td>
+			</tr>
+                        <tr id="sex.label">
+                                <td></td>
+                                <td>
+				   label
+				</td>
+				<td>
+				sex
+				</td>
+			</tr>
+                        <tr id="sex.definition">
+                                <td></td>
+                                <td>
+				   definition
+				</td>
+				<td>
+				The organism&#39;s biological sex.
+				</td>
+			</tr>
+			
+                        <tr id="sex.usage">
+                                <td></td>
+                                <td>
+				   usage 
+				</td>
+				<td>
+				The recommended controlled vocabulary for this property is <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/human-sex">the sex authority table of the Publications Office.</a>
+				</td>
+			</tr>
+			
+			
+                        <tr id="sex.domain">
+                                <td></td>
+                                <td>
+				   domain
+				</td>
+				<td> 
+				<a href="http://www.w3.org/ns/person#Person"><div class="shorten">http://www.w3.org/ns/person#Person</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+                        <tr id="sex.range">
+                                <td></td>
+                                <td>
+				   range
+				</td>
+				<td> 
+				<a href="http://www.w3.org/2004/02/skos/core#Concept"><div class="shorten">http://www.w3.org/2004/02/skos/core#Concept</div></a>
+                                
+				</td>
+			</tr>
+			
+			
+		    </tbody>
+        </table>
+	<p/>
+
+     
+
+</section>
+
+<!--
+<section>
+<h2>
+   External terms
+</h2>
+This section lists the classes and properties that are mapped on external URIs.
+Either these are reused as-is, i.e. with no formal additional constraints compared to those retrievable via dereferencing the URI, or they are reused with terminological changes, i.e. having additional changes restricting the use to the needs of this vocabulary context.
+
+
+
+
+</section>
+-->
+
+
+ 
+  
+ 
+
+<!--
+<section class="appendix">
+
+<h2>Acknowledgments</h2>
+<p>
+The editors gratefully acknowledge the contributions made to this document by all members of the working group.
+</p><p>
+This work was elaborated by a Working Group under SEMIC by Interoperable Europe.
+Interoperable Europe of the European Commission was represented by Pavlina Fragkou, Anastasia Sofou and Alexandra Balahur.
+Emiel Dhondt was the editor of this Vocabularium.
+</p><p>
+
+</section>
+-->
+<!-- End page content -->
+</body>
+
+<!-- This must be at the end of the template, to ensure that the iterator properly works -->
+    <script defer>
+
+
+	    var prefixes = [ 
+{'pref':'adms:', 'ns': 'http://www.w3.org/ns/adms#'},
+{'pref':'dcat:', 'ns': 'http://www.w3.org/ns/dcat#'},
+{'pref':'dcatap:', 'ns': 'http://data.europa.eu/r5r/'},
+{'pref':'dcterms:', 'ns': 'http://purl.org/dc/terms/'},
+{'pref':'dctype:', 'ns': 'http://purl.org/dc/dcmitype/'},
+{'pref':'eli:', 'ns': 'http://data.europa.eu/eli/ontology#'},
+{'pref':'foaf:', 'ns': 'http://xmlns.com/foaf/0.1/'},
+{'pref':'locn:', 'ns': 'http://www.w3.org/ns/locn#'},
+{'pref':'odrl:', 'ns': 'http://www.w3.org/ns/odrl/2/'},
+{'pref':'owl:', 'ns': 'http://www.w3.org/2002/07/owl#'},
+{'pref':'prov:', 'ns': 'http://www.w3.org/ns/prov#'},
+{'pref':'rdf:', 'ns': 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'},
+{'pref':'rdfs:', 'ns': 'http://www.w3.org/2000/01/rdf-schema#'},
+{'pref':'skos:', 'ns': 'http://www.w3.org/2004/02/skos/core#'},
+{'pref':'spdx:', 'ns': 'http://spdx.org/rdf/terms#'},
+{'pref':'time:', 'ns': 'http://www.w3.org/2006/time#'},
+{'pref':'vcard:', 'ns': 'http://www.w3.org/2006/vcard/ns#'},
+{'pref':'xhv:', 'ns': 'http://www.w3.org/1999/xhtml/vocab#'},
+{'pref':'xsd:', 'ns': 'http://www.w3.org/2001/XMLSchema#'}
+				];
+
+	    function shorturl (url) {
+				var short = url;
+				for (e in prefixes) {
+				   var elem = prefixes[e];
+				   if (short.startsWith(elem.ns)) {
+  					short = elem.pref + short.slice(elem.ns.length);
+					}
+				};
+				return short;
+			};
+
+	    var shorten = document.getElementsByClassName("shorten");
+	    for (k=0;k < shorten.length ; k++){
+			var selem = shorten[k];	
+	                selem.innerHTML = shorturl(selem.innerHTML.trim());
+			}
+    </script>
+    <script defer>
+	    document.getElementById("w3c-state").insertAdjacentText("afterbegin", "SEMIC Recommendation ");
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css"> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/codemirror.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/javascript/javascript.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.6/mode/turtle/turtle.min.js" ></script>
+    <script src="https://codemirror.net/5/mode/javascript/javascript.js" ></script>
+    <script src="./html/example.js" ></script>
+	<script type="text/javascript">
+		function elementInView(elem){
+				goesIn = ($(window).height() + $(window).scrollTop()) > $(elem).offset().top;
+				goesOut = ($(window).scrollTop()) > ($(elem).offset().top + $(elem).height());
+				if (goesIn && !goesOut)
+					return 1;
+				else
+					return 0;
+			};
+
+		$(window).scroll(function(){
+			$('.CodeMirror').each(function(){
+				if (elementInView($(this))){
+					$(this).each(function(i, el){
+						el.CodeMirror.refresh();
+					});
+				}
+			});
+			
+		});
+	</script>
+	<style>
+		.CodeMirror {
+		  border: 1px solid #eee;
+		  height: auto;
+		}
+		.buttonsample {
+		cursor: pointer;
+		margin-top: 10px;
+		margin-left: 10px;
+		font-weight: 700;
+		border:0 outset buttonface;
+		background: #F5F6F8;
+		background-image: linear-gradient(to bottom,#F5F6F8,#DBDCDE);
+		border-radius:4px;
+		box-shadow:0 1px 3px #666;
+		font-family: Arial;
+		color: grey;
+		font-size: 14px;
+		padding: 10px 5px;
+		text-decoration: none;
+		float: right
+	}
+	.buttonsample:hover {color:#2a70d3}
+	.tabsstyle {
+		padding: 10px;
+		overflow: hidden;
+	}
+	li.ui-tabs-tab > a:hover {
+		background-color:dodgerblue;
+		color:white;
+	}
+  </style>
+</html>
